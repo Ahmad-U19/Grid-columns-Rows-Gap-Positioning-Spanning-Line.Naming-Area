@@ -1,0 +1,40 @@
+.container{
+    background-color: grey;
+    width: 650px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: [first-start]150px [first-end second-start] 150px [second-end third-start] 120px [third-end];
+    grid-gap: 20px 50px;
+
+    grid-template-areas: "first first first"
+                          "second third sixth"
+                          "fourth fifth sixth";
+}
+.item1{
+    background-color: royalblue;
+    grid-area: first;
+}
+.item2{
+    background-color: hotpink;
+    grid-area: second;
+}
+.item3{
+    background-color: orangered;
+   grid-area: third;
+    
+}
+.item4{
+    background-color: yellowgreen;
+    grid-area: fourth;
+    
+}
+.item5{
+    background-color: yellow;
+    grid-area: fifth;
+}
+.item6{
+    background-color: aqua;
+    grid-area: sixth;
+}
